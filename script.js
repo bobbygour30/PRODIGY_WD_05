@@ -1,5 +1,8 @@
-const apiKey = "739b61b1a769000a580a09e6caf9eb51";
-const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";//Api used from https://openweathermap.org/
+// api url and key is in .env file
+require('dotenv').config();
+
+const apiKey = process.env.API_KEY;
+const apiUrl = process.env.API_BASE_URL;
 
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
